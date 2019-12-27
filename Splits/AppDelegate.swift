@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -32,6 +32,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
+//    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool {
+//        guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false}
+//        guard let topAsDetailController = secondaryAsNavController.topViewController as? ImagePresentationVC else { return false }
+//        if topAsDetailController.image == nil {
+//            // Return true to indicatie that we have handled the collapse by doing nothing; the secondary controller will be discarded
+//            return true;
+//        }
+//
+//        return false;
+//    }
 }
 
